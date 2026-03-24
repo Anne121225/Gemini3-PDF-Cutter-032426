@@ -1,0 +1,8 @@
+{
+  "name": "FDA 510(k) Review Studio v2.8",
+  "description": "Regulatory Command Center: Nordic WOW Edition. A hyper-efficient, agentic workspace for complex medical device submission review.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
