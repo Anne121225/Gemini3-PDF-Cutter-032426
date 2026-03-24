@@ -528,6 +528,17 @@ export default function App() {
                           {isProcessing ? <Activity className="w-5 h-5 animate-spin" /> : <Scissors className="w-5 h-5" />}
                           Execute Document Cut
                         </button>
+
+                        {selectedDoc?.status === "trimmed" && (
+                          <motion.button 
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            className="w-full bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-900 dark:text-white py-4 rounded-xl font-semibold transition-all flex items-center justify-center gap-2 border border-zinc-200 dark:border-zinc-700"
+                          >
+                            <Download className="w-5 h-5" />
+                            Download Trimmed Artifact
+                          </motion.button>
+                        )}
                       </div>
                     </div>
 
